@@ -1,9 +1,4 @@
-# 😊 Ello — Real-Time Face & Emotion Recognition System
 
-Detects faces via webcam and classifies expressions in real-time:
-**Happy · Sad · Angry · Fear · Surprise · Disgust · Neutral**
-
----
 
 ## 📁 Project Files
 

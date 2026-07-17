@@ -1,0 +1,26 @@
+# ══════════════════════════════════════════════════════════════════
+#   Ello Face Emotion Detection System — Requirements
+#   Python: 3.10.x  (NOT 3.11, 3.12, 3.14)
+#   Install: pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════════
+
+# ── Core ──────────────────────────────────────────────────────────
+opencv-python==4.8.1.78       # Camera + drawing (must be full version, not headless)
+numpy<2                        # CRITICAL: TensorFlow breaks with NumPy 2.x
+
+# ── Option A: FER (lighter, faster) ───────────────────────────────
+fer==22.5.1                    # Facial Expression Recognition
+tensorflow==2.15.0             # Backend for FER (works with numpy<2)
+keras==2.15.0                  # Required by FER
+
+# ── Option B: DeepFace (more accurate, easier install) ────────────
+# deepface                     # Uncomment this line if FER fails
+# tf-keras                     # Uncomment if deepface needs it
+
+# ── Optional: better face detection ───────────────────────────────
+# mtcnn                        # Uncomment for --mtcnn mode (more accurate)
+
+# ── Optional: analytics dashboard ─────────────────────────────────
+# streamlit>=1.32.0
+# plotly>=5.19.0
+# pandas>=2.0.0
